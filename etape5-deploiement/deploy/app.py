@@ -40,7 +40,6 @@ def get_retriever(db_dir: str) -> rag.Retriever:
 
 
 with st.sidebar:
-    st.caption(f"Modèle : {os.environ.get('LLM_MODEL', rag.DEFAULT_LLM)}")
     has_key = bool(os.environ.get("ANTHROPIC_API_KEY"))
     if not has_key:
         st.warning("Clé API absente : seul le contexte récupéré sera affiché.")
