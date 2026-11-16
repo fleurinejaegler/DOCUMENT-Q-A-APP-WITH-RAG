@@ -30,8 +30,8 @@ def _load_secrets_into_env() -> None:
 
 _load_secrets_into_env()
 
-st.set_page_config(page_title="Questions sur la documentation uv", page_icon="📚")
-st.title("Questions sur la documentation uv")
+st.set_page_config(page_title="Questions on the UV Document", page_icon="📚")
+st.title("Questions on the UV Document")
 
 
 @st.cache_resource(show_spinner="Chargement de l'index…")
@@ -42,15 +42,15 @@ def get_retriever(db_dir: str) -> rag.Retriever:
 with st.sidebar:
     has_key = bool(os.environ.get("ANTHROPIC_API_KEY"))
     if not has_key:
-        st.warning("Clé API absente : seul le contexte récupéré sera affiché.")
-    with st.expander("Paramètres avancés"):
+        st.warning("API key missing : only the context will be displayed.")
+    with st.expander("Advanced parameters"):
         db_dir = st.text_input("Dossier ChromaDB", str(DEFAULT_DB))
 
 retriever = get_retriever(db_dir)
 
 with st.form("question_form"):
-    question = st.text_input("Votre question")
-    submitted = st.form_submit_button("Demander")
+    question = st.text_input("Your question")
+    submitted = st.form_submit_button("Ask")
 
 if submitted and question.strip():
     passages = retriever.search(question)
