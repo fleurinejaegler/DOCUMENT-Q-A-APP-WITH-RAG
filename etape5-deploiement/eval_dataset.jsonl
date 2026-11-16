@@ -1,0 +1,20 @@
+{"id": "q01", "question": "How do I create a new uv project?", "gold_sources": ["concepts/projects/init.md"]}
+{"id": "q02", "question": "What does uv sync do?", "gold_sources": ["concepts/projects/sync.md"]}
+{"id": "q03", "question": "How do I export a lockfile to requirements.txt format?", "gold_sources": ["concepts/projects/export.md"]}
+{"id": "q04", "question": "Where does uv store its cache?", "gold_sources": ["concepts/cache.md", "reference/storage.md"]}
+{"id": "q05", "question": "How do I configure a custom package index?", "gold_sources": ["concepts/indexes.md"]}
+{"id": "q06", "question": "How do I use custom CA certificates for TLS?", "gold_sources": ["concepts/authentication/certificates.md"]}
+{"id": "q07", "question": "How does the uv auth CLI store credentials for a service?", "gold_sources": ["concepts/authentication/cli.md"]}
+{"id": "q08", "question": "How do I provide HTTP credentials for a package index?", "gold_sources": ["concepts/authentication/http.md"]}
+{"id": "q09", "question": "How do I install a specific Python version with uv?", "gold_sources": ["concepts/python-versions.md"]}
+{"id": "q10", "question": "What is a uv workspace?", "gold_sources": ["concepts/projects/workspaces.md"]}
+{"id": "q11", "question": "How do I build a distribution package with uv?", "gold_sources": ["concepts/projects/build.md"]}
+{"id": "q12", "question": "What is the uv build backend?", "gold_sources": ["concepts/build-backend.md"]}
+{"id": "q13", "question": "What does uv run do in a project?", "gold_sources": ["concepts/projects/run.md"]}
+{"id": "q14", "question": "How does uv resolve dependency versions?", "gold_sources": ["concepts/resolution.md"]}
+{"id": "q15", "question": "What is uv tool run used for?", "gold_sources": ["concepts/tools.md"]}
+{"id": "q16", "question": "How do I enable preview features in uv?", "gold_sources": ["concepts/preview.md"]}
+{"id": "q17", "question": "How does pip compile lock an environment?", "gold_sources": ["pip/compile.md"]}
+{"id": "q18", "question": "How do I install uv on my machine?", "gold_sources": ["getting-started/installation.md"]}
+{"id": "q20", "question": "What is the capital of Australia?", "gold_sources": []}
+{"id": "q21", "question": "What will the price of uv Pro be next year?", "gold_sources": []}

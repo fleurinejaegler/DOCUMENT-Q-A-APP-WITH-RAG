@@ -1,0 +1,6 @@
+# Versions loose on purpose, except chromadb: the index in chroma_db/ was built with 1.5.9.
+streamlit>=1.40
+chromadb==1.5.9
+sentence-transformers>=3.0
+anthropic>=0.40
+numpy<2

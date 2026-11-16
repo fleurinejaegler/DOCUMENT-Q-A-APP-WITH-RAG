@@ -1,0 +1,276 @@
+{
+  "summary": {
+    "k": 3,
+    "questions_total": 20,
+    "answerable": 18,
+    "out_of_scope": 2,
+    "source_hit_rate_at_k": 0.8889,
+    "hits": 16,
+    "answers_generated": false,
+    "dataset": "eval_dataset.jsonl",
+    "db": "../step2/chroma_db",
+    "misses": [
+      "q01",
+      "q13"
+    ]
+  },
+  "per_question": [
+    {
+      "id": "q01",
+      "question": "How do I create a new uv project?",
+      "gold_sources": [
+        "concepts/projects/init.md"
+      ],
+      "retrieved_sources": [
+        "index.md",
+        "getting-started/features.md",
+        "concepts/projects/index.md"
+      ],
+      "hit_at_k": false
+    },
+    {
+      "id": "q02",
+      "question": "What does uv sync do?",
+      "gold_sources": [
+        "concepts/projects/sync.md"
+      ],
+      "retrieved_sources": [
+        "concepts/projects/sync.md",
+        "concepts/projects/config.md",
+        "concepts/projects/sync.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q03",
+      "question": "How do I export a lockfile to requirements.txt format?",
+      "gold_sources": [
+        "concepts/projects/export.md"
+      ],
+      "retrieved_sources": [
+        "concepts/projects/sync.md",
+        "concepts/projects/export.md",
+        "concepts/projects/export.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q04",
+      "question": "Where does uv store its cache?",
+      "gold_sources": [
+        "concepts/cache.md",
+        "reference/storage.md"
+      ],
+      "retrieved_sources": [
+        "reference/storage.md",
+        "concepts/cache.md",
+        "concepts/cache.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q05",
+      "question": "How do I configure a custom package index?",
+      "gold_sources": [
+        "concepts/indexes.md"
+      ],
+      "retrieved_sources": [
+        "pip/compatibility.md",
+        "concepts/indexes.md",
+        "pip/compatibility.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q06",
+      "question": "How do I use custom CA certificates for TLS?",
+      "gold_sources": [
+        "concepts/authentication/certificates.md"
+      ],
+      "retrieved_sources": [
+        "concepts/authentication/certificates.md",
+        "concepts/authentication/certificates.md",
+        "concepts/authentication/certificates.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q07",
+      "question": "How does the uv auth CLI store credentials for a service?",
+      "gold_sources": [
+        "concepts/authentication/cli.md"
+      ],
+      "retrieved_sources": [
+        "concepts/authentication/cli.md",
+        "concepts/authentication/http.md",
+        "concepts/authentication/cli.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q08",
+      "question": "How do I provide HTTP credentials for a package index?",
+      "gold_sources": [
+        "concepts/authentication/http.md"
+      ],
+      "retrieved_sources": [
+        "concepts/indexes.md",
+        "concepts/authentication/http.md",
+        "concepts/authentication/index.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q09",
+      "question": "How do I install a specific Python version with uv?",
+      "gold_sources": [
+        "concepts/python-versions.md"
+      ],
+      "retrieved_sources": [
+        "concepts/python-versions.md",
+        "index.md",
+        "reference/storage.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q10",
+      "question": "What is a uv workspace?",
+      "gold_sources": [
+        "concepts/projects/workspaces.md"
+      ],
+      "retrieved_sources": [
+        "concepts/projects/workspaces.md",
+        "concepts/projects/workspaces.md",
+        "reference/internals/index.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q11",
+      "question": "How do I build a distribution package with uv?",
+      "gold_sources": [
+        "concepts/projects/build.md"
+      ],
+      "retrieved_sources": [
+        "concepts/projects/build.md",
+        "index.md",
+        "reference/troubleshooting/build-failures.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q12",
+      "question": "What is the uv build backend?",
+      "gold_sources": [
+        "concepts/build-backend.md"
+      ],
+      "retrieved_sources": [
+        "concepts/build-backend.md",
+        "index.md",
+        "concepts/build-backend.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q13",
+      "question": "What does uv run do in a project?",
+      "gold_sources": [
+        "concepts/projects/run.md"
+      ],
+      "retrieved_sources": [
+        "index.md",
+        "concepts/tools.md",
+        "concepts/build-backend.md"
+      ],
+      "hit_at_k": false
+    },
+    {
+      "id": "q14",
+      "question": "How does uv resolve dependency versions?",
+      "gold_sources": [
+        "concepts/resolution.md"
+      ],
+      "retrieved_sources": [
+        "concepts/resolution.md",
+        "reference/internals/resolver.md",
+        "concepts/projects/dependencies.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q15",
+      "question": "What is uv tool run used for?",
+      "gold_sources": [
+        "concepts/tools.md"
+      ],
+      "retrieved_sources": [
+        "concepts/tools.md",
+        "concepts/tools.md",
+        "concepts/tools.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q16",
+      "question": "How do I enable preview features in uv?",
+      "gold_sources": [
+        "concepts/preview.md"
+      ],
+      "retrieved_sources": [
+        "concepts/preview.md",
+        "concepts/preview.md",
+        "concepts/preview.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q17",
+      "question": "How does pip compile lock an environment?",
+      "gold_sources": [
+        "pip/compile.md"
+      ],
+      "retrieved_sources": [
+        "getting-started/features.md",
+        "getting-started/features.md",
+        "pip/compile.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q18",
+      "question": "How do I install uv on my machine?",
+      "gold_sources": [
+        "getting-started/installation.md"
+      ],
+      "retrieved_sources": [
+        "index.md",
+        "getting-started/installation.md",
+        "getting-started/first-steps.md"
+      ],
+      "hit_at_k": true
+    },
+    {
+      "id": "q20",
+      "question": "What is the capital of Australia?",
+      "gold_sources": [],
+      "retrieved_sources": [
+        "concepts/resolution.md",
+        "concepts/projects/dependencies.md",
+        "reference/internals/resolver.md"
+      ],
+      "hit_at_k": null
+    },
+    {
+      "id": "q21",
+      "question": "What will the price of uv Pro be next year?",
+      "gold_sources": [],
+      "retrieved_sources": [
+        "reference/policies/platforms.md",
+        "reference/benchmarks.md",
+        "getting-started/installation.md"
+      ],
+      "hit_at_k": null
+    }
+  ]
+}
