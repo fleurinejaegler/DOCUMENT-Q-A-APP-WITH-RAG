@@ -1,0 +1,18 @@
+{
+  "input_dir": "corpus",
+  "files_seen": 55,
+  "files_loaded": 54,
+  "files_skipped_empty": [
+    "reference/contributing.md"
+  ],
+  "total_chunks": 468,
+  "chunks_from_header_split": 253,
+  "chunks_from_fixed_fallback": 215,
+  "avg_chunk_chars": 767.9,
+  "median_chunk_chars": 753.0,
+  "min_chunk_chars": 94,
+  "max_chunk_chars": 1199,
+  "max_chunk_setting": 1200,
+  "overlap_setting": 150,
+  "min_section_setting": 200
+}

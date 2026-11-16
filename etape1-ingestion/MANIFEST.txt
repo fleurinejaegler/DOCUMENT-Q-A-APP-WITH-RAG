@@ -1,0 +1,4 @@
+Source: https://github.com/astral-sh/uv (docs/ directory, MIT/Apache-2.0)
+Commit: d5c3f174417418c24ec3c276e01b0f62b961b13c
+Selection: docs/ minus docs/guides/ (guides excluded to stay within 30-75 files)
+Files: 55
