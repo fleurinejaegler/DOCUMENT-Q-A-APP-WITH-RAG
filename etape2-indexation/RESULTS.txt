@@ -1,0 +1,23 @@
+Step 2 - Embeddings and index in ChromaDB
+
+Model: sentence-transformers/all-MiniLM-L6-v2 (384 dims, cosine, normalized embeddings)
+Index: ChromaDB PersistentClient, collection "docs", one entry per chunk
+       (id = chunk_id from step 1, document = text, metadata = source, doc_title,
+        section, chunk_index, split, char_count)
+
+Configuration A (delivered step 1 chunks, 1200/150):
+  chunks indexed: 468
+  chunks over the model's 256-token limit (truncated at embedding): 134
+  full rebuild from scratch: same counts and same retrieval results
+  retrieval (6 hand-made queries): hit@1 2/6, hit@3 4/6
+
+Configuration B (experiment, 800/100, scratch only, not delivered):
+  chunks indexed: 613 (avg 599 chars)
+  chunks over the token limit: 23
+  retrieval: hit@1 2/6, hit@3 4/6 (same queries, same results)
+
+Notes:
+- The query set is small (6 queries, 1 expected source each). It is a sanity check.
+- Misses: "how do I pin the Python version" (expected concepts/python-versions.md)
+  and "what does uv run do" (expected concepts/projects/run.md).
+- Truncation is not the cause of these misses in config B.
